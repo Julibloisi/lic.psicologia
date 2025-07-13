@@ -1,3 +1,27 @@
-<link rel="stylesheet" href="style.css">
-...
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba Malla</title>
+    <style>
+        .materia {
+            background: #bfffc2;
+            border: 1px solid green;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola Malla</h1>
+    <div id="malla"></div>
+    <script>
+        const malla = document.getElementById('malla');
+        const materia = document.createElement('div');
+        materia.className = 'materia';
+        materia.textContent = 'Ejemplo de Materia';
+        malla.appendChild(materia);
+    </script>
+</body>
+</html>
