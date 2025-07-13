@@ -1,3 +1,4 @@
+// Estructura por año y cuatrimestre
 const estructura = {
     "1er Año": {
         "1er Cuatrimestre": [
@@ -71,6 +72,7 @@ const estructura = {
     }
 };
 
+// Correlativas
 const requisitos = {
     "Psicoanálisis I": ["Introduccion a la psicologia"],
     "Psicologia del desarrollo I": ["Introduccion a la psicologia"],
@@ -102,40 +104,41 @@ const requisitos = {
 const estado = {};
 
 function crearMalla() {
-    const malla = document.getElementById('malla');
+    const malla = document.getElementById("malla");
     for (const anio in estructura) {
-        const divAnio = document.createElement('div');
-        divAnio.className = 'anio';
-        const tituloAnio = document.createElement('h2');
+        const divAnio = document.createElement("div");
+        divAnio.className = "anio";
+        const tituloAnio = document.createElement("h2");
         tituloAnio.textContent = anio;
         divAnio.appendChild(tituloAnio);
 
         for (const cuatr in estructura[anio]) {
-            const divCuatr = document.createElement('div');
-            divCuatr.className = 'cuatrimestre';
-            const tituloCuatr = document.createElement('h3');
+            const divCuatr = document.createElement("div");
+            divCuatr.className = "cuatrimestre";
+            const tituloCuatr = document.createElement("h3");
             tituloCuatr.textContent = cuatr;
             divCuatr.appendChild(tituloCuatr);
 
             for (const materia of estructura[anio][cuatr]) {
-                const divMateria = document.createElement('div');
-                divMateria.className = 'materia';
-                divMateria.dataset.nombre = materia;
+                const divMateria = document.createElement("div");
+                divMateria.className = "materia";
                 divMateria.textContent = materia;
+                divMateria.dataset.nombre = materia;
 
-                const input = document.createElement('input');
-                input.type = 'number';
-                input.placeholder = 'Nota';
+                const input = document.createElement("input");
+                input.type = "number";
                 input.min = 1;
                 input.max = 10;
-                input.addEventListener('change', () => {
+                input.placeholder = "Nota";
+                input.addEventListener("change", () => {
                     estado[materia].nota = parseFloat(input.value);
                     calcularPromedio();
                 });
 
                 divMateria.appendChild(input);
-                divMateria.addEventListener('click', () => aprobarMateria(materia, divMateria));
+                divMateria.addEventListener("click", () => aprobarMateria(materia, divMateria));
                 divCuatr.appendChild(divMateria);
+
                 estado[materia] = {
                     nombre: materia,
                     div: divMateria,
@@ -154,12 +157,12 @@ function crearMalla() {
 
 function aprobarMateria(nombre, div) {
     const materia = estado[nombre];
-    if (materia.requisitos.some(req => req !== \"30_materias\" && !estado[req]?.aprobada)) {
-        alert(\"Aún no cumple los requisitos para aprobar esta materia.\");
+    if (materia.requisitos.some(req => req !== "30_materias" && !estado[req]?.aprobada)) {
+        alert("Aún no cumple los requisitos.");
         return;
     }
     materia.aprobada = true;
-    div.classList.add('aprobada');
+    div.classList.add("aprobada");
     desbloquearMaterias();
     calcularPromedio();
 }
@@ -167,24 +170,25 @@ function aprobarMateria(nombre, div) {
 function desbloquearMaterias() {
     const aprobadas = Object.values(estado).filter(m => m.aprobada).length;
     for (const materia of Object.values(estado)) {
-        if (!materia.aprobada && materia.requisitos.every(r => r === \"30_materias\" ? aprobadas >= 30 : estado[r]?.aprobada)) {
-            materia.div.classList.remove('bloqueada');
+        if (!materia.aprobada && materia.requisitos.every(r => r === "30_materias" ? aprobadas >= 30 : estado[r]?.aprobada)) {
+            materia.div.classList.remove("bloqueada");
         }
     }
 }
 
 function calcularPromedio() {
+    const materias1erAnio = estructura["1er Año"]["1er Cuatrimestre"]
+        .concat(estructura["1er Año"]["2do Cuatrimestre"]);
     let suma = 0;
     let cantidad = 0;
-    const primerAnio = Object.keys(estructura[\"1er Año\"]).flatMap(c => estructura[\"1er Año\"][c]);
-    for (const nombre of primerAnio) {
-        const mat = estado[nombre];
-        if (mat.aprobada && mat.nota) {
-            suma += mat.nota;
+    for (const nombre of materias1erAnio) {
+        const materia = estado[nombre];
+        if (materia.aprobada && !isNaN(materia.nota)) {
+            suma += materia.nota;
             cantidad++;
         }
     }
-    document.getElementById('promedio').textContent = cantidad ? (suma / cantidad).toFixed(2) : '-';
+    document.getElementById("promedio").textContent = cantidad ? (suma / cantidad).toFixed(2) : "-";
 }
 
 crearMalla();
