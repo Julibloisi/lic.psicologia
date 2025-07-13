@@ -1,0 +1,371 @@
+[
+  {
+    "codigo": "2.7.005",
+    "nombre": "Introducción a la Psicología",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.4.121",
+    "nombre": "Inglés I",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.1.103",
+    "nombre": "Biología y Neurofisiología",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 1,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.1.001",
+    "nombre": "Historia de la Civilización",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "3.4.099",
+    "nombre": "Introducción a la Informática",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.1.004",
+    "nombre": "Filosofía",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.1.085",
+    "nombre": "Lenguaje, Lógica y Argumentación",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "1.1.001",
+    "nombre": "Introducción a la Empresa",
+    "correlativas": [],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.007",
+    "nombre": "Psicología Social",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.008",
+    "nombre": "Fundamentos de Psicología Cognitiva",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.014",
+    "nombre": "Fundamentos de Psicología Sistémica",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.022",
+    "nombre": "Psicología y Salud Pública",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 1,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.010",
+    "nombre": "Psicología del Desarrollo I",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.009",
+    "nombre": "Psicoanálisis I",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.011",
+    "nombre": "Dinámica de Grupos",
+    "correlativas": [
+      "2.7.007"
+    ],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.1.105",
+    "nombre": "Fundamentos de Sociología y Antropología",
+    "correlativas": [],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "3.1.005",
+    "nombre": "Introducción a la Estadística",
+    "correlativas": [],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.013",
+    "nombre": "Metodología de la Investigación Psicológica",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 2,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.4.122",
+    "nombre": "Inglés II",
+    "correlativas": [
+      "2.4.121"
+    ],
+    "anio": 2,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.015",
+    "nombre": "Psicología del Desarrollo II",
+    "correlativas": [
+      "2.7.010"
+    ],
+    "anio": 2,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.024",
+    "nombre": "Psicoanálisis: Escuela Inglesa y Francesa",
+    "correlativas": [
+      "2.7.009"
+    ],
+    "anio": 2,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.1.120",
+    "nombre": "Psicopatología",
+    "correlativas": [
+      "2.1.103"
+    ],
+    "anio": 2,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.016",
+    "nombre": "Psicología Institucional",
+    "correlativas": [
+      "2.7.007"
+    ],
+    "anio": 2,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.017",
+    "nombre": "Psicoanálisis II",
+    "correlativas": [
+      "2.7.009"
+    ],
+    "anio": 3,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.018",
+    "nombre": "Psicología del Desarrollo III",
+    "correlativas": [
+      "2.7.010"
+    ],
+    "anio": 3,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.019",
+    "nombre": "TTED: Técnicas Psicométricas",
+    "correlativas": [
+      "2.7.008",
+      "2.7.013"
+    ],
+    "anio": 3,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.026",
+    "nombre": "Psico. Educacional y Orientación Vocacional",
+    "correlativas": [
+      "2.7.015"
+    ],
+    "anio": 3,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.025",
+    "nombre": "TTED: Técnicas Proyectivas",
+    "correlativas": [
+      "2.7.024"
+    ],
+    "anio": 3,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "1.1.007",
+    "nombre": "Gerencia de Recursos Humanos",
+    "correlativas": [],
+    "anio": 3,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.023",
+    "nombre": "Psicología Clínica",
+    "correlativas": [
+      "2.1.120",
+      "2.7.015",
+      "2.7.009"
+    ],
+    "anio": 3,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.027",
+    "nombre": "Teoría y Técnica de Selección de Personal",
+    "correlativas": [
+      "2.7.019",
+      "1.1.007"
+    ],
+    "anio": 3,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.028",
+    "nombre": "Diseños de Investigación",
+    "correlativas": [
+      "2.7.013"
+    ],
+    "anio": 3,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.020",
+    "nombre": "Psicopatologías Actuales",
+    "correlativas": [
+      "2.7.016",
+      "2.7.017"
+    ],
+    "anio": 3,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.012",
+    "nombre": "Psicología de los Vínculos Laborales",
+    "correlativas": [
+      "2.7.016"
+    ],
+    "anio": 4,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.029",
+    "nombre": "Métodos Psicoterapéuticos",
+    "correlativas": [
+      "2.1.120",
+      "2.7.017",
+      "2.7.015"
+    ],
+    "anio": 4,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.030",
+    "nombre": "Psicología Jurídica",
+    "correlativas": [
+      "2.7.017",
+      "2.7.020"
+    ],
+    "anio": 4,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.021",
+    "nombre": "Evaluación de los Vínculos Interpersonales",
+    "correlativas": [
+      "2.1.004"
+    ],
+    "anio": 4,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.1.108",
+    "nombre": "Ética y Deontología",
+    "correlativas": [],
+    "anio": 4,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.006",
+    "nombre": "Escuelas en Psicología",
+    "correlativas": [
+      "2.7.005"
+    ],
+    "anio": 4,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "2.7.031",
+    "nombre": "Psicofarmacología para Psicólogos",
+    "correlativas": [
+      "2.7.020"
+    ],
+    "anio": 4,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "5.1.004",
+    "nombre": "Artes Combinadas",
+    "correlativas": [],
+    "anio": 4,
+    "cuatrimestre": 2
+  },
+  {
+    "codigo": "PPS05",
+    "nombre": "Prácticas Profesionales Supervisadas",
+    "correlativas": [],
+    "anio": 5,
+    "cuatrimestre": 1
+  },
+  {
+    "codigo": "2.7.032",
+    "nombre": "TIF - Trabajo de Integración Final",
+    "correlativas": [
+      "2.7.028"
+    ],
+    "anio": 5,
+    "cuatrimestre": 2
+  }
+]
