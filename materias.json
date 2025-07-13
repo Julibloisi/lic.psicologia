@@ -1,0 +1,27 @@
+[
+  {
+    "codigo": "2.7.005",
+    "nombre": "Introducción a la Psicología",
+    "correlativas": []
+  },
+  {
+    "codigo": "2.7.007",
+    "nombre": "Psicología Social",
+    "correlativas": ["2.7.005"]
+  },
+  {
+    "codigo": "2.7.010",
+    "nombre": "Psicología del Desarrollo I",
+    "correlativas": ["2.7.005"]
+  },
+  {
+    "codigo": "2.7.009",
+    "nombre": "Psicoanálisis I",
+    "correlativas": ["2.7.005"]
+  },
+  {
+    "codigo": "2.1.103",
+    "nombre": "Biología y Neurofisiología",
+    "correlativas": ["2.7.005"]
+  }
+]
